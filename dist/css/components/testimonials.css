@@ -1,0 +1,92 @@
+/*-- Testimonials --*/
+.testimonials {
+  padding: 160px 0;
+}
+.testimonials h5 {
+  color: var(--grayish-blue);
+  font-family: var(--fraunces-font);
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.testimonials__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding: 0 170px;
+}
+.testimonials__container .testimonials__card {
+  margin-top: 85px;
+  text-align: center;
+}
+.testimonials__container .testimonials__card .testmonials__clientphoto {
+  width: 72px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.testimonials__container .testimonials__card .testimonials__para {
+  margin: 70px 0 0 0;
+  max-width: 40ch;
+  color: var(--very-dark-grayish-blue);
+  font-family: var(--barlow-font);
+  font-size: var(--normal);
+  line-height: 1.6;
+}
+.testimonials__container .testimonials__card .testimonials__clientname {
+  margin: 60px 0 0 0;
+  color: var(--very-dark-desaturated-blue);
+  font-family: var(--fraunces-font);
+  font-size: var(--normal);
+}
+.testimonials__container .testimonials__card .testimonials__clientrole {
+  margin: 10px 0 0 0;
+  color: var(--grayish-blue);
+  font-family: var(--barlow-font);
+  font-size: var(--very-small);
+}
+
+/*-- Media Queries --*/
+@media only screen and (max-width: 1025px) {
+  .testimonials {
+    padding: 120px 0;
+  }
+  .testimonials__container {
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 30px;
+    padding: 0 100px;
+  }
+  .testimonials__container .testimonials__jennie {
+    margin-top: 0;
+    grid-column: 1/3;
+  }
+  .testimonials__container .testimonials__jennie .testimonials__para {
+    margin: 70px auto 0 auto;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .testimonials__container {
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonials__container .testimonials__jennie {
+    margin-top: 85px;
+    grid-column: 1/2;
+  }
+  .testimonials__container .testimonials__card .testimonials__para {
+    margin: 70px auto 0 auto;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .testimonials {
+    padding: 120px 0;
+  }
+  .testimonials__container {
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=testimonials.css.map */

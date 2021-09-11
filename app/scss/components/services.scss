@@ -1,0 +1,64 @@
+/*-- Services --*/
+
+.services{
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow-x: hidden;
+
+    &__textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        h4{
+            color: var(--dark-desaturated-cyan);
+            font-family: var(--fraunces-font);
+            font-size: var(--medium);
+        }
+
+        p{
+            max-width: 40ch;
+            margin: 30px 0 60px 0;
+
+            color: var(--dark-desaturated-cyan);
+            font-family: var(--barlow-font);
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+
+
+
+    &__left{
+        background: url('/images/desktop/image-graphic-design.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__right{
+        background: url('/images/desktop/image-photography.jpg');
+        background-position: center;
+        background-size: cover;
+
+        h4{
+            color: var(--dark-blue);
+        }
+
+        p{
+            color: var(--dark-blue);
+        }
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .services{
+        height: 1200px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

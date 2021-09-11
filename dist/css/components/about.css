@@ -1,0 +1,110 @@
+/*-- About --*/
+.about {
+  display: grid;
+  grid-template-rows: 600px 600px;
+}
+.about__top {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about__textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.about__textbox h2 {
+  max-width: 15.5ch;
+  font-family: var(--fraunces-font);
+  font-size: var(--big);
+  font-weight: 900;
+  text-align: left;
+}
+.about__textbox p {
+  margin: 40px 0 0 0;
+  max-width: 45ch;
+  font-family: var(--barlow-font);
+  font-size: var(--normal);
+  line-height: 1.5;
+  text-align: left;
+  color: var(--grayish-blue);
+}
+.about__textbox a {
+  position: relative;
+  font-size: var(--small);
+  font-family: var(--fraunces-font);
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 40px 0 0 0;
+}
+.about__textbox a::after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 110%;
+  background: var(--yellow);
+  opacity: 0.3;
+  border-radius: 100px;
+  bottom: -4px;
+  left: -5%;
+}
+.about__imgbox--top {
+  background-image: url("/images/desktop/image-transform.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.about__imgbox--bottom {
+  background: url("/images/desktop/image-stand-out.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.about__bottom {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about .red::after {
+  background: var(--soft-red);
+}
+
+/*-- Media Queries --*/
+@media only screen and (max-width: 1025px) {
+  .about {
+    grid-template-rows: 1fr 1fr;
+  }
+  .about__top {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .about__top .about__textbox {
+    grid-row: 2/3;
+  }
+  .about__bottom {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .about__textbox {
+    padding: 120px 0;
+    text-align: center;
+  }
+  .about__textbox h2 {
+    text-align: center;
+  }
+  .about__textbox p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .about__textbox {
+    padding: 120px 20px;
+  }
+  .about__textbox h2 {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

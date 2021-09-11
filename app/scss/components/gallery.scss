@@ -1,0 +1,54 @@
+/*-- Gallery --*/
+
+
+.gallery{
+    height: 450px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    overflow-x: hidden;
+
+
+    &__card--1{
+        background: url('/images/desktop/image-gallery-milkbottles.jpg');
+    }
+
+    &__card--2{
+        background: url('/images/desktop/image-gallery-orange.jpg');
+    }
+
+    &__card--3{
+        background: url('/images/desktop/image-gallery-cone.jpg');
+    }
+
+    &__card--4{
+        background: url('/images/desktop/image-gallery-sugarcubes.jpg');
+    }  
+
+    &__card{
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+@media only screen and (max-width: 1025px){
+    .gallery{
+        height: 900px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 426px) {
+
+    .gallery{
+        height: 1800px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}

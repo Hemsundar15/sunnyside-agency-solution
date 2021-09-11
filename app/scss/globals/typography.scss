@@ -1,0 +1,27 @@
+/*-- Typography --*/
+
+:root{
+    --very-small: 14px;
+    --small: 16px;
+    --normal: 18px;
+    --medium: 26px;
+    --big: 38px;
+    --very-big: 52px;
+}
+
+@media only screen and (max-width: 426px){
+    :root{
+        --very-small: 11px;
+        --small: 11px;
+        --normal: 14px;
+        --medium: 22px;
+        --big: 24px;
+        --very-big: 30px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    :root{
+        --very-big: 30px;
+    }
+}
